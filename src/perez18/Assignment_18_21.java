@@ -1,3 +1,10 @@
+
+
+
+//No longer have to do this assignment
+
+
+
 package perez18;
 
 import java.util.Scanner;
@@ -15,6 +22,7 @@ public class Assignment_18_21 {
 		//calling recursive method
 		System.out.println(dec2Bin(number));
 		
+		input.close();
 		
 	}
 	
@@ -27,9 +35,12 @@ public class Assignment_18_21 {
 
 }
 
-/*	(Decimal to binary) Write a recursive method that converts a decimal number
-	into a binary number as a string. The method header is:
-	public static String dec2Bin(int value)
+/*	Assignment Details:
+ 
+ 	(Decimal to binary) Write a recursive method that converts a decimal number
+ 	into a binary number as a string. The method header is:
+ 	public static String dec2Bin(int value)
 	Write a test program that prompts the user to enter a decimal number and displays
 	its binary equivalent.
-*/
+	
+ */
