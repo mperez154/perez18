@@ -11,32 +11,22 @@ public class Assignment_18_9 {
 		String myInteger = input.nextLine();
 
 		// Calling recursive method
-		reverseDisplay(myInteger);
+		System.out.println(reverseDisplay2(myInteger));
 
 		input.close();
 
 	}
-
-	public static void reverseDisplay(String integer) {
+	
+	public static int reverseDisplay2(String integer) {
 		if (integer.length() == 0) {
-			System.out.println("\nCompleted");
+			return 0;
 		} else if (integer.length() == 1) {
-			System.out.println(integer);
+			return Integer.parseInt(integer);
 		} else {
 			System.out.print(integer.charAt(integer.length() - 1));
 			integer = integer.substring(0, integer.length() - 1);
-			reverseDisplay(integer);
+			return reverseDisplay2(integer);
 		}
 	}
+	
 }
-
-/*
- * Assignment Details:
- * 
- * (Print the digits in an integer reversely) Write a recursive method that
- * displays an int value reversely on the console using the following header:
- * public static void reverseDisplay(int value) For example,
- * reverseDisplay(12345) displays 54321. Write a test program that prompts the
- * user to enter an integer and displays its reversal.
- * 
- */
